@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Marketing Project Request Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Rob Bartholme">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom.css" />
+	<link href="css/bootstrap-datetimepicker-delete.css" rel="stylesheet">
+	<link rel="shortcut icon" href="http://b-air.com/wp-content/uploads/2016/03/cropped-Favicon-bair-32x32.png">
+	</head>
+	<body>
+
+	<div id="main" class="container">
+		<header>
+			<div class="row">
+				<!-- <div class="col-sm-5">Intertex / B-Air / AER</div> -->
+				<div class="col-sm-6"><img src="img/aer-bair-logos-70h.png"></div>
+				<div class="col-sm-6">MARKETING PROJECT REQUEST</div>
+			</div>	
+		</header>
+
+		<form id="marketing-proj-req-form" data-toggle="validator">
+			<h3>REQUESTED BY</h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="lastName">Last Name</label>
+						<input type="text" class="form-control" id="lastName" placeholder="" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="firstName">First Name</label>
+						<input type="text" class="form-control" id="firstName" placeholder="" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="dateReq">Date Requested</label>
+						<input type="text" class="form-control" id="dateReq" placeholder="" required>
+						<div class="help-block with-errors"></div>
+	<!-- 					<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span> -->
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="dept">Department</label>
+						<input type="text" class="form-control" id="dept" placeholder="">
+					</div>
+				</div>
+			</div>	
+			<h3>PROJECT DETAILS</h3>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="projTitle">Project Title</label>
+						<input type="text" class="form-control" id="projTitle" placeholder="" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="deadline1">DEADLINE: 1st draft</label>
+						<input type="text" class="form-control" id="deadline1" placeholder="" required>
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group">
+						<label for="deadline2">DEADLINE: 2nd draft</label>
+						<input type="text" class="form-control" id="deadline2" placeholder="">
+					</div>
+					<div class="form-group">
+						<label for="deadline3">DEADLINE: FINAL</label>
+						<input type="text" class="form-control" id="deadline3" placeholder="" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="projType">Project Type</label>
+						<select id="projType" class="form-control" required>
+							<option selected="selected">[ SELECT ONE ]</option>
+							<option>Brochure</option>
+							<option>Flyer</option>
+							<option>Catalog</option>
+							<option>Print Ad</option>
+							<option>Digital Ad</option>
+							<option>Social Media Graphic</option>
+							<option>Website</option>
+							<option>Website Microsite</option>
+							<option>Trade Show Display</option>
+							<option>Packaging</option>
+							<option>Photography</option>
+							<option>Copy Writing</option>
+							<option>Other | Specify Below</option>
+	<!-- 						<option>TTKTTKTKKT</option> -->
+						</select>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="projDetails">Project Details</label>
+						<textarea id="projDetails" class="form-control" rows="3" required></textarea>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+			</div>	
+			<h3>APPROVALS</h3><!-- (to be filled-out by Marketing Director) - PRE-POPPED? -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="signature">Signature</label>
+						<input type="text" class="form-control" id="signature" placeholder="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="lastName2">Last Name</label>
+						<input type="text" class="form-control" id="lastName2" placeholder="">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="firstName2">First Name</label>
+						<input type="text" class="form-control" id="firstName2" placeholder="">
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="hoursEstimate">Estimate Hours</label><!-- (NOT PRE-POPPED) -->
+						<input type="text" class="form-control" id="hoursEstimate" placeholder="">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="dateApproved">DATE APPROVED</label>
+						<input type="text" class="form-control" id="dateApproved" placeholder="">
+					</div>
+				</div>
+			</div>	
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/transition.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.45/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	<script>
+	$(function() {
+		$('#dateReq, #dateApproved, #deadline1, #deadline2, #deadline3').datetimepicker({
+			format: 'MM/DD/YYYY'
+		});
+		$('#marketing-proj-req-form').validator()
+	});
+	</script>
+
+	</body>
+</html>

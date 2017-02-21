@@ -1,0 +1,37 @@
+* {
+	font-family: 'Noto Sans', sans-serif;
+}
+header {
+		font-size: 2em;
+		margin-bottom: 2em;
+}
+header img {
+	width: 50%;
+	height: auto;
+}
+header .col-sm-6:last-child {
+		text-align: right;
+		/*outline: 2px dotted orange;*/
+}
+#main {
+	margin: 1em auto 4em auto;
+}
+#main h3 {
+	background-color: #379dce;
+	font-size: 1.25em;
+	color: #fff;
+	margin-bottom: 1em;
+	padding: .5em;
+}
+.btn {
+	display: block;
+	background-color: #379dce;
+	color: #fff;
+	font-weight: bold;
+	margin: 1em auto 0 auto;
+}
+.btn:hover {
+	background: url("img/fiyuh.gif") 0 0 no-repeat;
+	background-size: cover;
+	color: #fff;
+}
