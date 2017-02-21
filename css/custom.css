@@ -2,12 +2,18 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 header {
-		font-size: 2em;
+		/*font-size: 2em;*/
 		margin-bottom: 2em;
+		
+}
+header h2 {
+	font-size: 3em;
+	text-align: center;
 }
 header img {
-	width: 50%;
+	width: 20%;
 	height: auto;
+	margin-bottom: 2em;
 }
 header .col-sm-6:last-child {
 		text-align: right;
@@ -34,4 +40,19 @@ header .col-sm-6:last-child {
 	background: url("img/fiyuh.gif") 0 0 no-repeat;
 	background-size: cover;
 	color: #fff;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
 }
