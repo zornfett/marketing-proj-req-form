@@ -11,7 +11,7 @@ header h2 {
 	text-align: center;
 }
 header img {
-	width: 20%;
+	width: 10%;
 	height: auto;
 	margin-bottom: 2em;
 }
@@ -31,28 +31,39 @@ header .col-sm-6:last-child {
 }
 .btn {
 	display: block;
-	background-color: #379dce;
+	background-color: #379dce !important;
 	color: #fff;
+	font-size: 2em;
 	font-weight: bold;
 	margin: 1em auto 0 auto;
 }
 .btn:hover {
-	background: url("img/fiyuh.gif") 0 0 no-repeat;
+	background: url("../img/fiyuh.gif") 0 0 no-repeat;
 	background-size: cover;
 	color: #fff;
 }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-
+footer small {
+	float: right;
+    margin-top: 2em;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
+#screengrab {
+	/*outline: 5px dashed red;*/
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
+/* mobile & tab.portrait */
+@media (max-width: 767px) { 
+	header h2 {
+		font-size: 2.25em;
+	}
+	header img {
+		display: block;
+		width: 25%;
+		margin: 0 auto 2em auto;
+	}
+}
+
+/* tab.lando & desktop */
+@media (min-width: 768px) {
 
 }
