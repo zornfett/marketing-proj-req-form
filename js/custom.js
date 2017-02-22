@@ -1,10 +1,16 @@
-$(function() {
+$(function(){
 	// calendars!
 	$('#dateReq, #dateApproved, #deadline1, #deadline2, #deadline3').datetimepicker({
 		format: 'MM/DD/YYYY'
 	});
 	// validation!
 	$('#marketing-proj-req-form').validator();
+	// preload images - why not?
+	var images = [
+		'img/fiyuh.gif',
+		'img/aer-bair-logos-70h.png'
+	];
+	$.preload(images);
 });
 
 // get date/time for the screencapt filename
@@ -21,7 +27,6 @@ $('.btn').on('click', function(e){
 	if (!$(this).hasClass("disabled")) {
 		e.preventDefault();
 		$('#capture-region').addClass("so-valid");
-
 		// retitle the page for capture
 		var newTitle = $('#projTitle').val();
 		$('header h2').html(newTitle + "<br /><span>(refresh the page to enter a new project)</span>");

@@ -16,7 +16,7 @@ header h2 span {
 header img {
 	width: 10%;
 	height: auto;
-	margin-bottom: 2em;
+	margin: 1em 0 2em 0;
 }
 header .col-sm-6:last-child {
 		text-align: right;
