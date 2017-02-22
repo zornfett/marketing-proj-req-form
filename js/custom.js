@@ -1,39 +1,41 @@
 $(function() {
-	// calendars yay!
+	// calendars!
 	$('#dateReq, #dateApproved, #deadline1, #deadline2, #deadline3').datetimepicker({
 		format: 'MM/DD/YYYY'
 	});
-	// validation woo!
+	// validation!
 	$('#marketing-proj-req-form').validator();
 });
+
 // get date/time for the screencapt filename
-var dt  = new Date();
-var time = dt.getFullYear() + (dt.getMonth()+1) + dt.getMonth() + dt.getDate() + dt.getHours() + dt.getMinutes();
-console.log(time);
+var timeInMs = Date.now();
+if (!Date.now) {
+	Date.now = function now() {
+		return new Date().getTime();
+	};
+}
+console.log(timeInMs);
 
-// var now = moment('YY-MM-DD-HH-MM');
-// console.log(now);
-
-// new Date(dateString);
-
-// um, create a screencapture on SUBMIT
 $('.btn').on('click', function(e){
-	e.preventDefault(); // REMOVE BEFORE DEPLOY!
-	// retitle the page for capture
-	var newTitle = $('#projTitle').val();
-	$('header h2').html(newTitle);
-	html2canvas(document.body, {
-		onrendered: function(canvas) {
-			$('#screengrab').append(canvas);
-			// output canvas to a file
-			$('#screengrabutt').attr('href', canvas.toDataURL("image/png"));
-			$('#screengrabutt').attr('download','projreq-'+time+'.png');
-			// force the user to download it!
-			$('#screengrabutt')[0].click();
-		}
-	});
+	// only produce the PNG if the FORM is valid
+	if (!$(this).hasClass("disabled")) {
+		e.preventDefault();
+		$('#capture-region').addClass("so-valid");
 
+		// retitle the page for capture
+		var newTitle = $('#projTitle').val();
+		$('header h2').html(newTitle + "<br /><span>(refresh the page to enter a new project)</span>");
+		html2canvas(document.body, {
+			onrendered: function(canvas) {
 
+				// $('#screengrab').append(canvas); // put the png in the layout for eval
 
-	// console.log("screengrab!");
+				// output canvas to a file
+				$('#screengrabutt').attr('href', canvas.toDataURL("image/png"));
+				$('#screengrabutt').attr('download','projreq-'+timeInMs+'.png');
+				// force the user to download it!
+				$('#screengrabutt')[0].click();
+			}
+		});
+	}
 });

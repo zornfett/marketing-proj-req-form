@@ -19,9 +19,6 @@
 <div class="container">
 	<header>
 		<div class="row">
-			<!-- <div class="col-sm-5">Intertex / B-Air / AER</div> -->
-<!-- 				<div class="col-sm-6"><img src="img/aer-bair-logos-70h.png"></div>
-			<div class="col-sm-6">MARKETING PROJECT REQUEST</div> -->
 			<a href="http://www.aerindustries.com/" target="_blank"><img src="img/aer-bair-logos-70h.png" /></a>
 			<h2>MARKETING PROJECT REQUEST</h2>
 		</div>	
@@ -33,14 +30,14 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="lastName">Last Name</label>
-						<input type="text" class="form-control" id="lastName" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="lastName" placeholder="" required>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="firstName">First Name</label>
-						<input type="text" class="form-control" id="firstName" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="firstName" placeholder="" required>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
@@ -49,11 +46,8 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="dateReq">Date Requested</label>
-						<input type="text" class="form-control" id="dateReq" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="dateReq" placeholder="&#x1f4c5;" required>
 						<div class="help-block with-errors"></div>
-	<!-- 					<span class="input-group-addon">
-							<span class="glyphicon glyphicon-calendar"></span>
-						</span> -->
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -68,7 +62,7 @@
 				<div class="col-sm-12">
 					<div class="form-group">
 						<label for="projTitle">Project Title</label>
-						<input type="text" class="form-control" id="projTitle" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="projTitle" placeholder="" required>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
@@ -77,23 +71,23 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="deadline1">DEADLINE: 1st draft</label>
-						<input type="text" class="form-control" id="deadline1" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="deadline1" placeholder="&#x1f4c5;" required>
 						<div class="help-block with-errors"></div>
 					</div>
 					<div class="form-group">
 						<label for="deadline2">DEADLINE: 2nd draft</label>
-						<input type="text" class="form-control" id="deadline2" placeholder="">
+						<input type="text" class="form-control" id="deadline2" placeholder="&#x1f4c5;">
 					</div>
 					<div class="form-group">
 						<label for="deadline3">DEADLINE: FINAL</label>
-						<input type="text" class="form-control" id="deadline3" placeholder="" ><!-- required -->
+						<input type="text" class="form-control" id="deadline3" placeholder="&#x1f4c5;" required>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="projType">Project Type</label>
-						<select id="projType" class="form-control" ><!-- required -->
+						<select id="projType" class="form-control" required>
 							<option selected="selected">[ SELECT ONE ]</option>
 							<option>Brochure</option>
 							<option>Flyer</option>
@@ -108,7 +102,6 @@
 							<option>Photography</option>
 							<option>Copy Writing</option>
 							<option>Other | Specify Below</option>
-	<!-- 						<option>TTKTTKTKKT</option> -->
 						</select>
 						<div class="help-block with-errors"></div>
 					</div>
@@ -118,17 +111,15 @@
 				<div class="col-sm-12">
 					<div class="form-group">
 						<label for="projDetails">Project Details</label>
-						<textarea id="projDetails" class="form-control" rows="3" ><!-- required --></textarea>
+						<textarea id="projDetails" class="form-control" rows="3" required></textarea>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
 			</div>	
-			<h3>APPROVALS</h3><!-- (to be filled-out by Marketing Director) - PRE-POPPED? -->
+			<h3>APPROVALS <span>(to be filled-out by the Marketing Director)</span></h3>
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="form-group">
-<!-- 						<label for="signature">Signature</label>
-						<input type="text" class="form-control" id="signature" placeholder=""> -->
 						<label for="signature">Signature</label>
 						<textarea id="signature" class="form-control" rows="2"></textarea>
 					</div>
@@ -151,24 +142,22 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="form-group">
-						<label for="hoursEstimate">Estimate Hours</label><!-- (NOT PRE-POPPED) -->
+						<label for="hoursEstimate">Estimate Hours</label>
 						<input type="text" class="form-control" id="hoursEstimate" placeholder="">
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="dateApproved">DATE APPROVED</label>
-						<input type="text" class="form-control" id="dateApproved" placeholder="">
+						<input type="text" class="form-control" id="dateApproved" placeholder="&#x1f4c5;">
 					</div>
 				</div>
 			</div>	
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
-	<!-- DEV/TEST elements -->
-	<a id="screengrabutt"></a>
-	<div id="screengrab"></div>
-
+	<a id="screengrabutt"><!-- this HREFs to invoke the img download --></a>
+	<div id="screengrab"><!-- this is a DEV element --></div>
 	<footer>
 		<small>v1.2 - 170221</small>
 	</footer>

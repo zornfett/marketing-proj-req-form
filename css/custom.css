@@ -10,6 +10,9 @@ header h2 {
 	font-size: 3em;
 	text-align: center;
 }
+header h2 span {
+	font-size: .35em;
+}
 header img {
 	width: 10%;
 	height: auto;
@@ -19,16 +22,30 @@ header .col-sm-6:last-child {
 		text-align: right;
 		/*outline: 2px dotted orange;*/
 }
-#main {
+#capture-region {
 	margin: 1em auto 4em auto;
 }
-#main h3 {
+#capture-region h3 {
 	background-color: #379dce;
 	font-size: 1.25em;
 	color: #fff;
 	margin-bottom: 1em;
 	padding: .5em;
 }
+#capture-region h3 span {
+	font-size: .5em;
+}
+
+/* FORM is valid effects */
+#capture-region.so-valid input,
+#capture-region.so-valid select,
+#capture-region.so-valid textarea {
+	font-size: 2.25em;
+}
+#capture-region.so-valid .btn {
+	display: none;
+}
+
 .btn {
 	display: block;
 	background-color: #379dce !important;
