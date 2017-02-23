@@ -2,9 +2,7 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 header {
-		/*font-size: 2em;*/
 		margin-bottom: 2em;
-		
 }
 header h2 {
 	font-size: 3em;
@@ -42,6 +40,7 @@ header .col-sm-6:last-child {
 #capture-region.so-valid textarea {
 	font-size: 2.25em;
 }
+/*#capture-region.so-valid header h2 span,*/
 #capture-region.so-valid .btn {
 	display: none;
 }
@@ -62,10 +61,6 @@ header .col-sm-6:last-child {
 footer small {
 	float: right;
     margin-top: 2em;
-}
-
-#screengrab {
-	/*outline: 5px dashed red;*/
 }
 
 /* mobile & tab.portrait */

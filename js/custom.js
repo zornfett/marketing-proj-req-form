@@ -7,8 +7,8 @@ $(function(){
 	$('#marketing-proj-req-form').validator();
 	// preload images - why not?
 	var images = [
-		'img/fiyuh.gif',
-		'img/aer-bair-logos-70h.png'
+		// 'img/aer-bair-logos-70h.png',
+		'img/fiyuh.gif'
 	];
 	$.preload(images);
 });
