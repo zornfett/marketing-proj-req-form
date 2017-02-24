@@ -33,6 +33,12 @@ header .col-sm-6:last-child {
 #capture-region h3 span {
 	font-size: .5em;
 }
+#capture-region select {
+	overflow: hidden;
+}
+#capture-region .other-details {
+	display: none;
+}
 
 /* FORM is valid effects */
 #capture-region.so-valid input,

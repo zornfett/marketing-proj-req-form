@@ -87,9 +87,8 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
-						<label for="projType">Project Type</label>
-						<select id="projType" class="form-control" required>
-							<option selected="selected">[ SELECT ONE ]</option>
+						<label for="projType">Project Type (hold Ctrl or &#x2318; to select multiple)</label>
+						<select multiple size="13" id="projType" class="form-control" required>
 							<option>Brochure</option>
 							<option>Flyer</option>
 							<option>Catalog</option>
@@ -105,6 +104,11 @@
 							<option>Other | Specify Below</option>
 						</select>
 						<div class="help-block with-errors"></div>
+						<div class="form-group other-details">
+							<label for="otherDetails">Other Details</label>
+							<textarea id="otherDetails" class="form-control" rows="3" ></textarea><!-- required -->
+							<!-- <div class="help-block with-errors"></div> -->
+						</div>
 					</div>
 				</div>
 			</div>	

@@ -1,3 +1,12 @@
+// get date/time for the screencapt filename
+var timeInMs = Date.now();
+if (!Date.now) {
+	Date.now = function now() {
+		return new Date().getTime();
+	};
+}
+console.log(timeInMs);
+
 $(function(){
 	// calendars!
 	$('#dateReq, #dateApproved, #deadline1, #deadline2, #deadline3').datetimepicker({
@@ -11,16 +20,11 @@ $(function(){
 		'img/fiyuh.gif'
 	];
 	$.preload(images);
+	// if OTHER option is selected, incl description	
+	$('select option:last').on('click', function(){
+		$('.other-details').toggle();
+	});
 });
-
-// get date/time for the screencapt filename
-var timeInMs = Date.now();
-if (!Date.now) {
-	Date.now = function now() {
-		return new Date().getTime();
-	};
-}
-console.log(timeInMs);
 
 $('.btn').on('click', function(e){
 	// only produce the PNG if the FORM is valid
